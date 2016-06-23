@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" onKeyPressed="#fecharComEsc" prefHeight="300.0" prefWidth="350.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="automatos_trabalho2.view.JanelaPrincipalController">
+    <stylesheets>
+        <URL value="@Style.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="tfPalavra" layoutX="84.0" layoutY="151.0" onAction="#conferePalavra" prefHeight="26.0" prefWidth="185.0" promptText="Ex: ababab" />
+      <Button fx:id="btConferir" layoutX="84.0" layoutY="185.0" mnemonicParsing="false" onAction="#conferePalavra" prefHeight="26.0" prefWidth="185.0" text="Conferir palavra" />
+      <Label fx:id="lbLog" layoutX="1.0" layoutY="270.0" prefHeight="26.0" prefWidth="350.0" textAlignment="CENTER" textFill="#e80606" />
+      <Label layoutX="84.0" layoutY="130.0" text="Alfabeto (a+b)*a(a+b)(a+b)" />
+      <ImageView fitHeight="110.0" fitWidth="90.0" layoutX="16.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logoUFT.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="115.0" layoutY="32.0" prefHeight="16.0" prefWidth="229.0" text="Universidade Federal do Tocantins" />
+      <Label layoutX="115.0" layoutY="57.0" text="Aluno: Leonardo Rezende Costa" />
+      <Label layoutX="115.0" layoutY="84.0" text="Trabalho 2" />
+   </children>
+</AnchorPane>
